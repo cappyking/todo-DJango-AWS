@@ -7,7 +7,7 @@ from django.contrib.auth.forms import UserCreationForm,AuthenticationForm
 from django.contrib import messages
 from django.contrib.auth import authenticate, login as loginUser,logout
 from app.forms import TodoForm
-from .models import todo
+from app.models import todo
 from django.contrib.auth.decorators import login_required
 
 # Create your views here.
