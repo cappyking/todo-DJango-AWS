@@ -22,7 +22,7 @@ def test(request):
         user=request.user
         form=TodoForm()
         todos=todo.objects.filter(user=user).order_by('priority')
-        print(todos)
+
         return render(request,'index.html',context={'form':form,'todos':todos})
     else:
         return render(request,'index.html')
